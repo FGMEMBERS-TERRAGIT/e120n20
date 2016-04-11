@@ -1,0 +1,5 @@
+OBJECT_SHARED Models/Airport/ils.xml 120.473417 22.699278 22.2 282.06
+OBJECT_SHARED Models/Airport/tacan.xml 120.460319 22.670728 18.39 180
+OBJECT_SHARED Models/Communications/vordme_1.xml 120.473417 22.699278 22.2 180
+OBJECT_SHARED Models/Airport/localizer.xml 120.496972 22.702889 27.83 167.92
+OBJECT_STATIC chang-gu-world-trade-center.ac 120.314914 22.643125 29.08 20

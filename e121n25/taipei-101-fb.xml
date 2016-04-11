@@ -1,0 +1,1305 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ <path>taipei-101-fb.ac</path>
+
+ <params>
+  <RedLightX-light-near>0.4</RedLightX-light-near>
+  <RedLightX-light-med>0.8</RedLightX-light-med>
+  <RedLightX-light-far>10</RedLightX-light-far>
+ </params>
+
+ <animation>
+  <type>range</type>
+  <object-name>Detailed</object-name>
+  <min-m>0</min-m>
+<!--
+  <max-property>/sim/rendering/static-lod/detailed</max-property>
+ </animation>
+
+ <animation>
+  <type>range</type>
+  <object-name>Rough</object-name>
+  <min-property>/sim/rendering/static-lod/detailed</min-property>
+  <max-property>/sim/rendering/static-lod/rough</max-property>
+ </animation>
+
+ <animation>
+  <type>range</type>
+  <object-name>Bare</object-name>
+  <min-property>/sim/rendering/static-lod/rough</min-property>
+-->
+  <max-property>/sim/rendering/static-lod/bare</max-property>
+ </animation>
+
+ <animation>
+  <name>RedLightXGroup</name>
+  <object-name>RedLightX00</object-name>
+  <object-name>RedLightX01</object-name>
+  <object-name>RedLightX02</object-name>
+  <object-name>RedLightX03</object-name>
+  <object-name>RedLightX04</object-name>
+  <object-name>RedLightX05</object-name>
+  <object-name>RedLightX06</object-name>
+  <object-name>RedLightX07</object-name>
+  <object-name>RedLightX08</object-name>
+  <object-name>RedLightX09</object-name>
+  <object-name>RedLightX10</object-name>
+  <object-name>RedLightX11</object-name>
+  <object-name>RedLightX12</object-name>
+  <object-name>RedLightX13</object-name>
+  <object-name>RedLightX14</object-name>
+  <object-name>RedLightX15</object-name>
+  <object-name>RedLightX16</object-name>
+  <object-name>RedLightX17</object-name>
+  <object-name>RedLightX18</object-name>
+  <object-name>RedLightX19</object-name>
+  <object-name>RedLightX20</object-name>
+  <object-name>RedLightX21</object-name>
+  <object-name>RedLightX22</object-name>
+  <object-name>RedLightX23</object-name>
+  <object-name>RedLightX24</object-name>
+  <object-name>RedLightX25</object-name>
+  <object-name>RedLightX26</object-name>
+  <object-name>RedLightX27</object-name>
+  <object-name>RedLightX28</object-name>
+  <object-name>RedLightX29</object-name>
+  <object-name>RedLightX30</object-name>
+  <object-name>RedLightX31</object-name>
+  <object-name>RedLightX32</object-name>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>ColDay</object-name>
+  <object-name>TopDay</object-name>
+  <object-name>DoorDay</object-name>
+  <condition>
+   <less-than-equals>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+   </less-than-equals>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>ColNight</object-name>
+  <object-name>TopNight</object-name>
+  <object-name>DoorNight</object-name>
+  <object-name>MastNight</object-name>
+  <condition>
+   <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <name>RedLightXGroupNight</name>
+  <object-name>RedLightXGroup</object-name>
+  <condition>
+   <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>alpha-test</type>
+  <object-name>RedLightXGroup</object-name>
+  <alpha-factor>0.001</alpha-factor>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX00</object-name>
+  <offset-m>508.000061</offset-m>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>508.000061</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX01</object-name>
+  <offset-m>390.085873</offset-m>
+  <axis>
+   <x>-21.200001</x>
+   <y>-26.600002</y>
+   <z>388.600037</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX02</object-name>
+  <offset-m>390.085874</offset-m>
+  <axis>
+   <x>21.200001</x>
+   <y>-26.600008</y>
+   <z>388.600037</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX03</object-name>
+  <offset-m>390.085873</offset-m>
+  <axis>
+   <x>26.600002</x>
+   <y>21.199995</y>
+   <z>388.600037</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX04</object-name>
+  <offset-m>189.084638</offset-m>
+  <axis>
+   <x>26.6</x>
+   <y>-21.200005</y>
+   <z>186</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX05</object-name>
+  <offset-m>189.084636</offset-m>
+  <axis>
+   <x>26.6</x>
+   <y>21.199991</y>
+   <z>186</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX06</object-name>
+  <offset-m>255.375436</offset-m>
+  <axis>
+   <x>26.6</x>
+   <y>-21.200005</y>
+   <z>253.100006</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX07</object-name>
+  <offset-m>255.375435</offset-m>
+  <axis>
+   <x>26.6</x>
+   <y>21.199993</y>
+   <z>253.100006</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX08</object-name>
+  <offset-m>322.101074</offset-m>
+  <axis>
+   <x>26.6</x>
+   <y>-21.200005</y>
+   <z>320.300018</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX09</object-name>
+  <offset-m>322.101073</offset-m>
+  <axis>
+   <x>26.6</x>
+   <y>21.199993</y>
+   <z>320.300018</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX10</object-name>
+  <offset-m>390.085873</offset-m>
+  <axis>
+   <x>26.6</x>
+   <y>-21.200005</y>
+   <z>388.600037</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX11</object-name>
+  <offset-m>189.084636</offset-m>
+  <axis>
+   <x>-26.599989</x>
+   <y>21.200005</y>
+   <z>186</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX12</object-name>
+  <offset-m>189.084637</offset-m>
+  <axis>
+   <x>-26.6</x>
+   <y>-21.199999</y>
+   <z>186</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX13</object-name>
+  <offset-m>255.375435</offset-m>
+  <axis>
+   <x>-26.599989</x>
+   <y>21.200005</y>
+   <z>253.100006</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX14</object-name>
+  <offset-m>255.375436</offset-m>
+  <axis>
+   <x>-26.6</x>
+   <y>-21.199999</y>
+   <z>253.100006</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX15</object-name>
+  <offset-m>322.101073</offset-m>
+  <axis>
+   <x>-26.599989</x>
+   <y>21.200005</y>
+   <z>320.300018</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX16</object-name>
+  <offset-m>322.101074</offset-m>
+  <axis>
+   <x>-26.6</x>
+   <y>-21.199999</y>
+   <z>320.300018</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX17</object-name>
+  <offset-m>390.085873</offset-m>
+  <axis>
+   <x>-26.599989</x>
+   <y>21.200005</y>
+   <z>388.600037</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX18</object-name>
+  <offset-m>390.085873</offset-m>
+  <axis>
+   <x>-26.6</x>
+   <y>-21.199999</y>
+   <z>388.600037</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX19</object-name>
+  <offset-m>189.084637</offset-m>
+  <axis>
+   <x>-21.199987</x>
+   <y>26.600006</y>
+   <z>186</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX20</object-name>
+  <offset-m>189.084636</offset-m>
+  <axis>
+   <x>21.199999</x>
+   <y>26.599993</y>
+   <z>186</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX21</object-name>
+  <offset-m>255.375435</offset-m>
+  <axis>
+   <x>-21.199987</x>
+   <y>26.600006</y>
+   <z>253.100006</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX22</object-name>
+  <offset-m>255.375435</offset-m>
+  <axis>
+   <x>21.199999</x>
+   <y>26.599995</y>
+   <z>253.100006</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX23</object-name>
+  <offset-m>322.101073</offset-m>
+  <axis>
+   <x>-21.199987</x>
+   <y>26.600006</y>
+   <z>320.300018</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX24</object-name>
+  <offset-m>322.101073</offset-m>
+  <axis>
+   <x>21.199999</x>
+   <y>26.599995</y>
+   <z>320.300018</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX25</object-name>
+  <offset-m>390.085873</offset-m>
+  <axis>
+   <x>-21.199987</x>
+   <y>26.600006</y>
+   <z>388.600037</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX26</object-name>
+  <offset-m>390.085873</offset-m>
+  <axis>
+   <x>21.199999</x>
+   <y>26.599995</y>
+   <z>388.600037</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX27</object-name>
+  <offset-m>189.084637</offset-m>
+  <axis>
+   <x>-21.199999</x>
+   <y>-26.6</y>
+   <z>186</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX28</object-name>
+  <offset-m>189.084638</offset-m>
+  <axis>
+   <x>21.199999</x>
+   <y>-26.600006</y>
+   <z>186</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX29</object-name>
+  <offset-m>255.375436</offset-m>
+  <axis>
+   <x>-21.199999</x>
+   <y>-26.6</y>
+   <z>253.100006</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX30</object-name>
+  <offset-m>255.375436</offset-m>
+  <axis>
+   <x>21.199999</x>
+   <y>-26.600006</y>
+   <z>253.100006</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX31</object-name>
+  <offset-m>322.101074</offset-m>
+  <axis>
+   <x>-21.199999</x>
+   <y>-26.6</y>
+   <z>320.300018</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RedLightX32</object-name>
+  <offset-m>322.101074</offset-m>
+  <axis>
+   <x>21.199999</x>
+   <y>-26.600006</y>
+   <z>320.300018</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX00</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX01</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX02</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX03</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX04</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX05</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX06</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX07</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX08</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX09</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX10</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX11</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX12</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX13</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX14</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX15</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX16</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX17</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX18</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX19</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX20</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX21</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX22</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX23</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX24</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX25</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX26</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX27</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX28</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX29</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX30</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX31</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>billboard</type>
+  <object-name>RedLightX32</object-name>
+  <spherical type="bool">true</spherical>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX00</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX01</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX02</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX03</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX04</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX05</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX06</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX07</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX08</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX09</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX10</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX11</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX12</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX13</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX14</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX15</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX16</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX17</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX18</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX19</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX20</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX21</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX22</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX23</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX24</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX25</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX26</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX27</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX28</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX29</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX30</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX31</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+ <animation>
+  <type>dist-scale</type>
+  <object-name>RedLightX32</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep alias="../../../../params/RedLightX-light-near"/>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep alias="../../../../params/RedLightX-light-med"/>
+   </entry>
+   <entry>
+    <ind>16000</ind>
+    <dep alias="../../../../params/RedLightX-light-far"/>
+   </entry>
+  </interpolation>
+ </animation>
+
+</PropertyList>
