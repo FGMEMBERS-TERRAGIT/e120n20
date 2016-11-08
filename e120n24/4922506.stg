@@ -1,0 +1,4 @@
+OBJECT_SHARED Models/Airport/ndb.ac 120.65525 24.136278 72.53 180
+OBJECT_SHARED Models/Communications/vordme_1.xml 120.654361 24.194389 111.17 180
+OBJECT_SHARED Models/Airport/localizer.xml 120.622 24.245722 196.95 266.65
+OBJECT_STATIC shr-hwa-international-tower.ac 120.664914 24.149883 101.48 90
