@@ -2,3 +2,4 @@ OBJECT_SHARED Models/Airport/ils.xml 120.206833 22.939667 11.96 3.09
 OBJECT_SHARED Models/Airport/tacan.xml 120.204727 22.94993 16.85 180
 OBJECT_SHARED Models/Communications/vordme_1.xml 120.206833 22.939667 11.96 180
 OBJECT_SHARED Models/Airport/localizer.xml 120.207167 22.96675 18.36 88.83
+OBJECT_SHARED Models/Maritime/Civilian/Lighthouse.xml 120.1474459 22.9625157 -3.77 0

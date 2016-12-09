@@ -16,3 +16,4 @@ OBJECT_SHARED Models/Airport/marker.ac 121.245694 25.096278 18.03 180
 OBJECT_SHARED Models/Airport/localizer.xml 121.21375 25.071139 26.86 318.54
 OBJECT_SHARED Models/Airport/localizer.xml 121.222 25.059667 31.17 318.16
 OBJECT_SHARED Models/Airport/localizer.xml 121.245667 25.09625 18.02 139.64
+OBJECT_SHARED Models/Maritime/Civilian/Lighthouse.xml 121.0762621 25.0412855 8.67 0
