@@ -5,4 +5,5 @@ OBJECT_SHARED Models/Communications/vordme_1.xml 120.33325 22.578417 5.4 180
 OBJECT_SHARED Models/Communications/vordme_1.xml 120.339667 22.578194 5.97 180
 OBJECT_SHARED Models/Airport/marker.ac 120.326333 22.577806 6.79 180
 OBJECT_SHARED Models/Airport/localizer.xml 120.368417 22.5765 7.75 181.97
+OBJECT_SHARED Models/Maritime/Civilian/Lighthouse.xml 120.3007657 22.5511849 -2.7 0
 OBJECT_STATIC tuntex-sky-tower.ac 120.300291 22.61174 12.95 288
