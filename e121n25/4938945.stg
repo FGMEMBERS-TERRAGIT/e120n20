@@ -4,3 +4,12 @@ OBJECT_SHARED Models/Airport/marker.ac 121.250194 25.099806 12.36 180
 OBJECT_SHARED Models/Airport/marker.ac 121.256417 25.08675 22.37 180
 OBJECT_SHARED Models/Airport/marker.ac 121.424444 25.074333 178.07 180
 OBJECT_SHARED Models/Airport/localizer.xml 121.251639 25.083 26.2 139.95
+# dsf2stg
+# do not edit below this line
+#
+OBJECT_SHARED Models/Industrial/GenericStorageTank30m.ac 121.25003 25.09214 -73.41 270
+OBJECT_SHARED Models/Airport/egkk_oil.xml 121.25003 25.09139 19.29 0
+OBJECT_SHARED Models/Airport/egkk_oil.xml 121.25043 25.09152 20.51 0
+OBJECT_SHARED Models/Airport/egkk_oil.xml 121.25064 25.09099 20.34 0
+OBJECT_SHARED Models/Airport/egkk_oil.xml 121.25024 25.09086 20.46 0
+# END dsf2stg

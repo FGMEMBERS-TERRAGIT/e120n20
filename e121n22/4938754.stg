@@ -1,2 +1,8 @@
 OBJECT_SHARED Models/Airport/ndb.ac 121.508056 22.076694 166.11 180
 OBJECT_SHARED Models/Maritime/Civilian/Lighthouse.xml 121.502845 22.0810154 159.56 0
+# dsf2stg
+# do not edit below this line
+#
+OBJECT_SHARED Models/lib/vintage-tower-hangar.ac 121.53588 22.02758 0.00 137.35
+OBJECT_SHARED Models/lib/cube16x10.ac 121.53671 22.02691 13.79 135.92
+# END dsf2stg
